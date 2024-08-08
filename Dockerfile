@@ -1,9 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y git && apt-get install -y python3
-RUN apt-get install -y pip
-
-RUN pip install PyYAML
+RUN apt-get install -y python3-yaml
 
 COPY feed.py /usr/bin/feed.py
 
