@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get -y update
-RUN apt-get -y install git pytho
+RUN apt-get -y install git python
 
 RUN pip install PyYAML
 
