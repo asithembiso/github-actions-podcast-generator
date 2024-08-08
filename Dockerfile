@@ -1,6 +1,9 @@
-FROM python:3.10-slim-buster
+FROM ubuntu:latest
 
-RUN pip3 install PyYAML
+RUN apt-get -y update
+RUN apt-get -y install git pytho
+
+RUN pip install PyYAML
 
 COPY feed.py /usr/bin/feed.py
 
