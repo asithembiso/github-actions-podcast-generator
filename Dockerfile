@@ -1,7 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get -y update
-RUN apt-get -y install git python
+RUN apt-get update && apt-get install -y git && apt-get install -y python
 
 RUN pip install PyYAML
 
